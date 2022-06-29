@@ -45,7 +45,7 @@ for frame in range(0,t):
     for b in range(0,brain_par):
         temp = np.zeros((2,1))
         # for all axial plane
-        for all_d in range(0,d):
+        for all_d in range(1,d):
             #find indices
             indices_x,indices_y = np.where(atlas[:,:,all_d]==b)
             #for kk in tqdm(range(0,len(indices_x))):
